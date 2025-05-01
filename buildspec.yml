@@ -7,11 +7,12 @@ phases:
   build:
     commands:
       - echo "Building the static website..."
-      - mkdir -p dist
-      - cp index.html dist/
-      - cp styles.css dist/
-      - cp readme.md dist/
+      - cp index.html .
+      - cp styles.css .
+      - cp readme.md .
 
 artifacts:
   files:
-    - dist/**/*
+    - index.html
+    - styles.css
+    - readme.md
