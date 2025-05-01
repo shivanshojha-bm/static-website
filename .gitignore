@@ -1,0 +1,24 @@
+# Ignore Terraform files
+*.tf
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars.json
+
+# Ignore editor/IDE config files
+.vscode/
+.idea/
+*.swp
+
+# Node/npm cache (if used)
+node_modules/
+npm-debug.log
+
+# macOS/system files
+.DS_Store
+Thumbs.db
