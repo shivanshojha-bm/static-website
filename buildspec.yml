@@ -2,16 +2,16 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo Installing dependencies...
-
+    runtime-versions:
+      nodejs: 14
   build:
     commands:
-      - echo Building static website...
+      - echo "Building the static website..."
       - mkdir -p dist
-      - echo "<html><body><h1>Hello World</h1></body></html>" > dist/index.html
+      - cp index.html dist/
+      - cp styles.css dist/
+      - cp readme.md dist/
 
 artifacts:
   files:
-    - '**/*'
-  base-directory: dist
+    - dist/**/*
