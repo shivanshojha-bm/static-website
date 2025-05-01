@@ -7,9 +7,7 @@ phases:
   build:
     commands:
       - echo "Building the static website..."
-      - cp index.html .
-      - cp styles.css .
-      - cp readme.md .
+
 
 artifacts:
   files:
